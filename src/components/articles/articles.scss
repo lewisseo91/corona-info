@@ -1,0 +1,12 @@
+@import '../main/main.scss';
+
+.articles-container {
+    text-align: center;
+    color: $gray-color;
+    .article-container {
+        a {
+            color: $gray-color;
+            text-decoration: none;
+        }
+    }
+}
