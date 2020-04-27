@@ -4,8 +4,9 @@ import HomeComponent from '../home/home';
 
 class MainComponent extends Component {
     render() {
+        const { articles } = this.props;
         return (
-            <HomeComponent></HomeComponent>
+            <HomeComponent articles={articles}></HomeComponent>
         )
     }
 }

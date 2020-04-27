@@ -4,6 +4,7 @@ import Articles from '../articles/articles';
 
 class HomeComponent extends Component {
     render () {
+        const {articles} = this.props;
         return (
             <div className="home-container">
                 <div className="home-tit-container">
@@ -13,7 +14,7 @@ class HomeComponent extends Component {
                     </div>
                 </div>
                 <div className="home-main-container">
-                    <Articles />
+                    <Articles articles={articles} />
                 </div>
             </div>
         )
